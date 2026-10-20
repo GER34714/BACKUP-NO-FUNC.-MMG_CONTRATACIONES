@@ -1,61 +1,223 @@
-<!DOCTYPE html>
+```html
+<!doctype html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>MMG™ | Representante de Artistas</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <link rel="icon" type="image/png" href="https://iili.io/KtXqRHJ.md.png" />
-  <meta name="theme-color" content="#b97cff">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
-  <link rel="stylesheet" href="style.css">
+  <title>CARLOS ESTEBAN GALAUS — Reclamo por pago pendiente</title>
+  <meta name="description" content="Reclamo personal por un pago pendiente de un trabajo realizado.">
+  <meta name="theme-color" content="#101410">
+
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="CARLOS ESTEBAN GALAUS — ¡PAGÁ LO QUE DEBÉS!">
+  <meta property="og:description" content="Reclamo por trabajos pendientes de pago.">
+
+  <style>
+    :root {
+      --background: #101410;
+      --text: #f5f5f0;
+      --accent: #c6ff4d;
+      --muted: #a7afa4;
+      --border: rgba(255, 255, 255, .13);
+      --alert: #ff6969;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    html {
+      min-height: 100%;
+      background: var(--background);
+    }
+
+    body {
+      margin: 0;
+      min-height: 100vh;
+      min-height: 100svh;
+      display: flex;
+      flex-direction: column;
+      color: var(--text);
+      background:
+        radial-gradient(
+          ellipse at 50% 35%,
+          rgba(111, 145, 78, .16),
+          transparent 65%
+        ),
+        var(--background);
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
+    main {
+      width: 100%;
+      flex: 1;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 32px 20px;
+    }
+
+    .content {
+      width: 100%;
+      max-width: 1050px;
+      margin: 0 auto;
+      text-align: center;
+    }
+
+    .eyebrow {
+      margin: 0 0 24px;
+      color: var(--muted);
+      font-size: 12px;
+      font-weight: 700;
+      letter-spacing: .28em;
+      text-transform: uppercase;
+    }
+
+    h1 {
+      margin: 0;
+      color: var(--text);
+      font-size: clamp(34px, 7.5vw, 88px);
+      font-weight: 900;
+      line-height: 1.04;
+      letter-spacing: -.045em;
+      overflow-wrap: anywhere;
+    }
+
+    .divider {
+      width: 76px;
+      height: 5px;
+      margin: 32px auto;
+      background: var(--accent);
+      border-radius: 10px;
+    }
+
+    .message {
+      margin: 0 auto;
+      max-width: 950px;
+      color: var(--accent);
+      font-size: clamp(36px, 7.5vw, 82px);
+      font-weight: 900;
+      line-height: 1.1;
+      letter-spacing: -.035em;
+      text-transform: uppercase;
+      overflow-wrap: anywhere;
+    }
+
+    .additional {
+      margin: 25px auto 0;
+      color: var(--alert);
+      font-size: clamp(22px, 4.8vw, 46px);
+      font-weight: 900;
+      line-height: 1.15;
+      letter-spacing: -.025em;
+      text-transform: uppercase;
+      overflow-wrap: anywhere;
+    }
+
+    .amount {
+      display: block;
+      margin: 22px auto 0;
+      color: var(--text);
+      font-size: clamp(38px, 8vw, 76px);
+      font-weight: 900;
+      line-height: 1.05;
+      letter-spacing: -.035em;
+      overflow-wrap: anywhere;
+    }
+
+    footer {
+      padding: 18px 20px;
+      border-top: 1px solid var(--border);
+      color: #778075;
+      text-align: center;
+      font-size: 11px;
+      letter-spacing: .12em;
+      text-transform: uppercase;
+    }
+
+    @media (max-width: 480px) {
+      main {
+        padding: 28px 18px;
+      }
+
+      .eyebrow {
+        font-size: 10px;
+        letter-spacing: .2em;
+      }
+
+      h1 {
+        font-size: clamp(32px, 9vw, 44px);
+      }
+
+      .divider {
+        margin: 25px auto;
+      }
+
+      .message {
+        font-size: clamp(34px, 9vw, 48px);
+      }
+
+      .additional {
+        margin-top: 20px;
+        font-size: clamp(22px, 6vw, 30px);
+      }
+
+      .amount {
+        margin-top: 18px;
+        font-size: clamp(36px, 9vw, 48px);
+      }
+
+      footer {
+        font-size: 9px;
+        letter-spacing: .08em;
+      }
+    }
+
+    @media (prefers-reduced-motion: no-preference) {
+      .content {
+        animation: appear .7s ease-out both;
+      }
+
+      @keyframes appear {
+        from {
+          opacity: 0;
+          transform: translateY(12px);
+        }
+
+        to {
+          opacity: 1;
+          transform: translateY(0);
+        }
+      }
+    }
+  </style>
 </head>
+
 <body>
-  <div id="particles-js"></div>
+  <main>
+    <section class="content">
+      <p class="eyebrow">Reclamo por trabajos pendientes de pago</p>
 
-  <header>
-    <img src="https://iili.io/KtXqRHJ.md.png" alt="MMG Logo">
-    <h1>MMG™ | Contrataciones Oficiales de la Movida Tropical</h1>
-  </header>
+      <h1>CARLOS ESTEBAN GALAUS</h1>
 
-  <!-- Carrusel Rockola -->
-  <section class="artistas-wrapper">
-    <div class="swiper">
-      <div class="swiper-wrapper" id="artistas-container"></div>
+      <div class="divider" aria-hidden="true"></div>
 
-      <!-- Botones -->
-      <div class="swiper-button-prev"></div>
-      <div class="swiper-button-next"></div>
-    </div>
-  </section>
+      <p class="message">
+        ¡PAGÁ LO QUE DEBÉS!
+      </p>
 
-  <!-- SEGUINOS EN INSTAGRAM -->
-  <section class="instagram-section">
-    <h2>📸 Seguinos en Instagram</h2>
-    <a href="https://www.instagram.com/managermusicgrup1?igsh=MWc2NmFxbDBqZnk1MQ==" target="_blank" class="instagram-link">
-      <img src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png" alt="Instagram">
-      <span>@managermusicgrup1</span>
-    </a>
-  </section>
+      <p class="additional">
+        ¡NO ES EL ÚNICO TRABAJO QUE DEBÉS!
+      </p>
 
-  <!-- FOOTER -->
+      <span class="amount">¡PAGÁ LOS $100.000!</span>
+    </section>
+  </main>
+
   <footer>
-    <p>
-      © 2025 MMG Manager Music Group™ · sitio web
-      Creado y diseñado por 
-      <a href="https://ciborg347.onrender.com" target="_blank" class="firma-ciborg">Ciborg 347™</a>
-    </p>
+    Reclamo personal · Trabajos y pagos pendientes
   </footer>
-
-  <!-- BOTÓN WHATSAPP FLOTANTE -->
-  <a href="https://wa.me/5491157343551?text=Hola!%20Quiero%20más%20información%20sobre%20los%20artistas%20de%20MMG"
-     class="btn-whatsapp" target="_blank" aria-label="WhatsApp">
-    <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp">
-  </a>
-
-  <!-- Scripts -->
-  <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-  <script src="script.js"></script>
 </body>
 </html>
+```
